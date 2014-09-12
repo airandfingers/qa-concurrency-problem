@@ -1,0 +1,14 @@
+<a href="/list">Back to question list</a>
+<h1>
+    <%= question.text %>
+</h1>
+<% if ( question.answer ) { %>
+    <h2>
+        Answer: <%= question.answer %>
+    </h2>
+<% } %>
+
+<form method="POST" action="/answer/<%= question._id %>">
+    <input type="text" id="answer" name="answer" placeholder="Enter your answer here" />
+    <input type="submit" value="Submit" />
+</form>

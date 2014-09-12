@@ -1,0 +1,21 @@
+{
+  "name": "qa_concurrency_problem",
+  "version": "0.0.0",
+  "description": "Test problem: Simple Q&A site with concurrency issues",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "qa_concurrency_problem"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^1.0.0",
+    "express": "3.x",
+    "mongoose": "^3.8.16"
+  }
+}

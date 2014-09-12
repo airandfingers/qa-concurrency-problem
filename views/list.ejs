@@ -1,0 +1,11 @@
+<% questions.forEach(function(question) { %>
+    <div>
+        <a href="/question/<%= question._id %>">
+            <%= question.text %>
+        </a>
+    </div>
+<% }) %>
+<form method="post" action="/question">
+    <input type="text" id="text" name="text" placeholder="Enter your question here" />
+    <input type="submit" value="Submit" />
+</form>
